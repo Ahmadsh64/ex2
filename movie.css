@@ -52,11 +52,14 @@ dt{
     width: 800px;
 }
 
-header{
+.header{
     position: relative;
     background: url("bannerbg.png");
     background-repeat: repeat-x;
     overflow: hidden;
     text-align: center;
+}
+.headerTitle{
+    background: url("rbg.png");
 }
 
