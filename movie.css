@@ -1,3 +1,9 @@
+html,body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 body{
     font-family: Tahoma, Arial, Sans-serif;
     font-size: 1rem;
@@ -128,13 +134,39 @@ dt{
     text-align: center;
     text-shadow: 2px 2px #999999;
 }
-.validators{
-    bottom: 0;
-    opacity: 0;
-    position: fixed;
-    right: 0;
-}
+
 #reviews{
     width: 550px;
+}
+
+@media (max-width: 787px) { /*pxהגדרתי את  787
+                             pxכדי להיות שווה ל 786 */  
+    .movieInfo {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .movieInfo img {
+        width: 100%;
+    }
+
+    .movieInfo dl {
+        text-align: left;
+    }
+
+    .comments {
+        -webkit-column-count: 1;
+    }
+
+    .entries {
+        width: 100%;
+    }
+
+    .quoteBox, .authorBox {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    
 }
 
